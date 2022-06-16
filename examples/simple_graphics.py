@@ -2,9 +2,8 @@ import adafruit_pcd8544
 import board
 import busio
 import digitalio
-from image import image, image2
-from nokia5110functions import drawFullScreenBitmap, drawRect, drawLine, clearScreen
 from time import sleep
+from pcd8544_graphics import *
 
 mosi_pin = board.GP11
 clk_pin = board.GP10
@@ -32,3 +31,6 @@ for counter in range(48):
     drawLine(0,counter,84,counter,display)
     
 clearScreen(display)
+
+for counter in range(48):
+    drawLine(0,counter,84,counter,display)
