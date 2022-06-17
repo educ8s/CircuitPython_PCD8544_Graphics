@@ -1,12 +1,8 @@
 import adafruit_pcd8544
-import board
-import busio
-import digitalio
+import board,busio,digitalio,microcontroller
 from time import sleep
 from pcd8544_graphics import *
 from image import *
-import math
-import microcontroller
 
 mosi_pin = board.GP11
 clk_pin = board.GP10
