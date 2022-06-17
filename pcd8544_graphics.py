@@ -157,8 +157,11 @@ def _bottomSegment(x,y,display):
     display.hline(x,y,7,1)
     
 def draw_number(number, x, y, display):
-    zeros = '.1f'
-    number_string = f"{number:,{zeros}}"
+    zeros = '.2f'
+    if type(number) == float:
+        number_string = f"{number:,{zeros}}"
+    else:
+        number_string = str(number)
     if len(number_string) > 1:
         for digit in range(len(number_string)):
             _draw_single_number(number_string[digit],x,y,display)
