@@ -16,9 +16,9 @@ lcd = adafruit_pcd8544.PCD8544(spi, dc, cs, reset)
 lcd.bias = 5
 lcd.contrast = 45
 
-clearScreen(lcd)
+clear_screen(lcd)
     
-drawFullScreenBitmap(lcd,image)
+draw_full_screen_bitmap(lcd,image)
 
 while True:
     temperature = round(microcontroller.cpu.temperature,1)
