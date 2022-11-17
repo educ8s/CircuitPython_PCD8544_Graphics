@@ -7,7 +7,7 @@
  1. drawFullScreenBitmap(display,image)
  2. draw_number(number, x, y, display)
 
-#Video Tutorial
+# Video Tutorial
 
 <p align="center">
   <img src="preview.jpg" alt="Nokia 5110 with CircuitPython" width="800">
